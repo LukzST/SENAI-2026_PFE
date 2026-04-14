@@ -1,0 +1,78 @@
+/* Fundo e layout principal */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 80px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Título com degradê */
+h2 {
+    color: #f8fafc;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Container da navegação */
+nav {
+    height: 100%;
+}
+
+/* Lista de links */
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Itens da lista */
+li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilização dos Links (tags <a>) */
+a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+/* Efeito de hover suave */
+a:hover {
+    color: #38bdf8;
+}
+
+/* O botão "Sair" (último link) com estilo de destaque */
+li:last-child a {
+    color: #fca5a5;
+    border: 1px solid rgba(252, 165, 165, 0.3);
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: rgba(252, 165, 165, 0.05);
+}
+
+li:last-child a:hover {
+    background: #ef4444;
+    color: white;
+    border-color: #ef4444;
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+}

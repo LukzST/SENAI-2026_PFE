@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../pages/login.css"
+import "./login.css"
 
 import imagemEstacao from "../assets/a.png";
 
-export default function Login() {
+export default function Registro() {
     const [usuario, setUsario] = useState('');
     const [senha, setSenha] = useState('');
 
@@ -43,11 +43,11 @@ export default function Login() {
                         value={senha} 
                         onChange={(e) => setSenha(e.target.value)} />
 
-                        <button className="botao">
+                        <Link to='/dashboard' className="botao">
                             Entrar
-                        </button>
+                        </Link>
 
-                        <Link to='/'>Não tem uma conta? Cadastre-se!</Link>
+                        <Link to='/registro'>Não tem uma conta? Cadastre-se!</Link>
                     </form>
                 </div>
             </div>

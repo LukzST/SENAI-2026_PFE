@@ -104,7 +104,7 @@ label {
 }
 
 .botao:hover {
-  background-color: #f0ebd8; /* Eggshell */
+  background-color: #000000; /* Eggshell */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
